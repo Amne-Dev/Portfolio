@@ -88,6 +88,7 @@
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -120,11 +121,16 @@ body{
   box-sizing: border-box;
   position: fixed;
   bottom: 3%;
-  right: -0.65%;
+  right: 0.25%;
   height: 25vh;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
   
 
 }
+
+
 #loader{
   background: #000;
   height: 100%;
@@ -150,9 +156,27 @@ button {
   animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
 }
 
+.hover {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: var(--text-sec); /* the color */
+  width: 15vh;
+  color: var(--text-main);
+  padding-bottom: var(--s);
+  
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+.hover:hover {
+  --_p: 100%
+}
+
 
 .sidebar{
-  width: 30vh;
+  width: 27vh;
   position: fixed;
   left: 10vh;
   top: 0;
@@ -191,17 +215,6 @@ button {
   text-decoration: none;
 }
 
-.sidebar ul li a:hover {
-  transform: scale(1.01)  ;
-  opacity: 1;
-  margin: 0.5vh 0.5vh;
-  background-color: var(--bg-sec);
-  color: var(--text-sec);
-  text-shadow: #fff;
-  border: none;
-  border-radius: 5vh;
-  box-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 0.2);
-}
 
 .sidebar ul li a:active {
   color: var(--text-sec);
@@ -212,12 +225,12 @@ button {
 
 .content{
   min-height: 100vh;
-  margin-left: 30vh;
+  margin-left: 27vh;
 
 }
 
 .section-title{
-  margin-left: 15vh;
+  margin-left: 25vh;
   font-size: 3.6vh;
 }
 
@@ -225,7 +238,54 @@ button {
   color: var(--text-sec);
 }
 
+.section-subtitle{
+  margin-left: 25vh;
+  font-size: 3.6vh;
+}
+
+.section-subtitle span{
+  color: var(--text-sec);
+}
+
 #home{
-  margin-top: 21.5vh;
+  margin-top: 0;
   text-wrap: pretty;
+  padding-top: 30vh;
+}
+
+.paragraph{
+  padding-top: 5vh;
+  font-size: 2.7vh;
+  text-indent: 2.5vh;
+  text-align: left;
+  padding-right: 11%;
+  padding-left: 15vh;
+  padding-bottom: 10vh;
+}
+
+#about{
+  margin-top: 85vh;
+  padding-top: 20vh;
+  padding-bottom: 50vh;
+}
+
+.paragraph-list{
+  padding-top: 5vh;
+  font-size: 2.7vh;
+  text-align: left;
+  padding-right: 11%;
+  padding-left: 15vh;
+  padding-bottom: 10vh;
+}
+
+.tool{
+  color: var(--text-sec);
+}
+
+.social{
+  display: flex; flex-wrap:wrap; align-items: center; justify-content: center;
+  float: right;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
 }
