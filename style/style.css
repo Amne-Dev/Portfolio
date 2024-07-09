@@ -289,3 +289,40 @@ button {
   right: 5%;
   bottom: 5%;
 }
+
+#projects{
+  padding-bottom: 25vh;
+  margin-left: 10vh;
+}
+
+.project-title{
+  padding-top: 5vh;
+  font-size: 2.7vh;
+  text-align: left;
+  padding-right: 11%;
+  padding-left: 15vh;
+  padding-bottom: 0.25vh;
+
+}
+
+.project-description{
+  font-size: 2.7vh;
+  text-indent: 2.5vh;
+  text-align: left;
+  padding-right: 11%;
+  padding-left: 15vh;
+  padding-bottom: 0.25vh;
+  
+}
+.project-image{
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 55vh;
+  border-radius: 2.5vh;
+  display: block;
+  height: 45vh;
+  width: 1;
+
+  box-shadow: var(--bg-sec) 0.5vh;
+  position: relative;
+}
