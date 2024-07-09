@@ -114,15 +114,27 @@ body{
   right: 2.5%;
 }
 
+.signature{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  
+
+}
 #loader{
   background: #000;
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 999;
   align-content: center;
   text-align: center;
   cursor: none;
+  top: 0;
+  left: 0;
   
 }
 
@@ -143,7 +155,7 @@ button {
   position: fixed;
   left: 10vh;
   top: 0;
-  z-index: 999;
+  z-index: 10;
   height: 100%;
   font-size: 24px;
   text-align: center;
