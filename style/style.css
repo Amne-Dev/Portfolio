@@ -34,7 +34,7 @@
     filter: blur(0.01);
   }
   100% {
-    filter: blur(12px) opacity(0%);
+    filter: blur(1.2vh) opacity(0%);
   }
 }
 
@@ -50,8 +50,8 @@
   }
   100% {
     letter-spacing: 1em;
-    transform: translateZ(300px);
-    filter: blur(12px) opacity(0%);
+    transform: translateZ(30vh);
+    filter: blur(1.2vh) opacity(0%);
   }
 }
 
@@ -62,10 +62,10 @@
  */
  @keyframes slide-fwd-center {
   0% {
-    transform: translateX(25px);
+    transform: translateX(2.5vh);
   }
   100% {
-    transform: translateZ(160px);
+    transform: translateZ(16vh);
   }
 }
 
@@ -107,7 +107,7 @@ body{
   z-index: -1;
   position: fixed;
   width: 95%;
-  outline: 2px solid var(--bg-sec);
+  outline: 0.2vh solid var(--bg-sec);
   align-self: center;
   height: 95%;
   top: 2.5%;
@@ -120,7 +120,8 @@ body{
   box-sizing: border-box;
   position: fixed;
   bottom: 3%;
-  right: 2%;
+  right: -0.65%;
+  height: 25vh;
   
 
 }
@@ -151,13 +152,13 @@ button {
 
 
 .sidebar{
-  width: 300px;
+  width: 30vh;
   position: fixed;
   left: 10vh;
   top: 0;
   z-index: 10;
   height: 100%;
-  font-size: 24px;
+  font-size: 2.4vh;
   text-align: center;
   align-content: center;
 }  
@@ -165,14 +166,14 @@ button {
 
 .sidebar ul li {
   list-style: none;
-  margin: 20px 50px;
+  margin: 2vh 5vh;
   
 }
 
 .sidebar ul li a{
   display: block;
   text-align: center;
-  padding: 16px 0px;
+  padding: 1.6vh 0vh;
   text-decoration: none;
   opacity: 0.8;
   
@@ -193,13 +194,13 @@ button {
 .sidebar ul li a:hover {
   transform: scale(1.01)  ;
   opacity: 1;
-  margin: 5px 5px;
+  margin: 0.5vh 0.5vh;
   background-color: var(--bg-sec);
   color: var(--text-sec);
   text-shadow: #fff;
   border: none;
   border-radius: 5vh;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 0.2);
 }
 
 .sidebar ul li a:active {
@@ -211,13 +212,13 @@ button {
 
 .content{
   min-height: 100vh;
-  margin-left: 300px;
+  margin-left: 30vh;
 
 }
 
 .section-title{
   margin-left: 15vh;
-  font-size: 36px;
+  font-size: 3.6vh;
 }
 
 .section-title span{
