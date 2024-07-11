@@ -34,7 +34,7 @@
     filter: blur(0.01);
   }
   100% {
-    filter: blur(1.2vh) opacity(0%);
+    filter: blur(1.2dvh) opacity(0%);
   }
 }
 
@@ -50,8 +50,8 @@
   }
   100% {
     letter-spacing: 1em;
-    transform: translateZ(30vh);
-    filter: blur(1.2vh) opacity(0%);
+    transform: translateZ(30dvh);
+    filter: blur(1.2dvh) opacity(0%);
   }
 }
 
@@ -62,10 +62,10 @@
  */
  @keyframes slide-fwd-center {
   0% {
-    transform: translateX(2.5vh);
+    transform: translateX(2.5dvh);
   }
   100% {
-    transform: translateZ(16vh);
+    transform: translateZ(16dvh);
   }
 }
 
@@ -108,7 +108,7 @@ body{
   z-index: -1;
   position: fixed;
   width: 95%;
-  outline: 0.2vh solid var(--bg-sec);
+  outline: 0.2dvh solid var(--bg-sec);
   align-self: center;
   height: 95%;
   top: 2.5%;
@@ -122,7 +122,7 @@ body{
   position: fixed;
   bottom: 3%;
   right: 0.25%;
-  height: 25vh;
+  height: 25dvh;
   user-select: none;
   -webkit-user-drag: none;
   pointer-events: none;
@@ -159,7 +159,7 @@ button {
 .hover {
   --s: 0.1em;   /* the thickness of the line */
   --c: var(--text-sec); /* the color */
-  width: 15vh;
+  width: 15dvh;
   color: var(--text-main);
   padding-bottom: var(--s);
   
@@ -176,13 +176,13 @@ button {
 
 
 .sidebar{
-  width: 27vh;
+  width: 27dvh;
   position: fixed;
-  left: 10vh;
+  left: 10dvh;
   top: 0;
   z-index: 10;
   height: 100%;
-  font-size: 2.4vh;
+  font-size: 2.4dvh;
   text-align: center;
   align-content: center;
 }  
@@ -190,14 +190,14 @@ button {
 
 .sidebar ul li {
   list-style: none;
-  margin: 2vh 5vh;
+  margin: 2dvh 5dvh;
   
 }
 
 .sidebar ul li a{
   display: block;
   text-align: center;
-  padding: 1.6vh 0vh;
+  padding: 1.6dvh 0dvh;
   text-decoration: none;
   opacity: 0.8;
   
@@ -224,14 +224,14 @@ button {
 
 
 .content{
-  min-height: 100vh;
-  margin-left: 27vh;
+  min-height: 100dvh;
+  margin-left: 27dvh;
 
 }
 
 .section-title{
-  margin-left: 25vh;
-  font-size: 3.6vh;
+  margin-left: 25dvh;
+  font-size: 3.6dvh;
 }
 
 .section-title span{
@@ -239,8 +239,8 @@ button {
 }
 
 .section-subtitle{
-  margin-left: 25vh;
-  font-size: 3.6vh;
+  margin-left: 25dvh;
+  font-size: 3.6dvh;
 }
 
 .section-subtitle span{
@@ -250,32 +250,32 @@ button {
 #home{
   margin-top: 0;
   text-wrap: pretty;
-  padding-top: 30vh;
+  padding-top: 30dvh;
 }
 
 .paragraph{
-  padding-top: 5vh;
-  font-size: 2.7vh;
-  text-indent: 2.5vh;
+  padding-top: 5dvh;
+  font-size: 2.7dvh;
+  text-indent: 2.5dvh;
   text-align: left;
   padding-right: 11%;
-  padding-left: 15vh;
-  padding-bottom: 10vh;
+  padding-left: 15dvh;
+  padding-bottom: 10dvh;
 }
 
 #about{
-  margin-top: 85vh;
-  padding-top: 20vh;
-  padding-bottom: 50vh;
+  margin-top: 85dvh;
+  padding-top: 20dvh;
+  padding-bottom: 50dvh;
 }
 
 .paragraph-list{
-  padding-top: 5vh;
-  font-size: 2.7vh;
+  padding-top: 5dvh;
+  font-size: 2.7dvh;
   text-align: left;
   padding-right: 11%;
-  padding-left: 15vh;
-  padding-bottom: 10vh;
+  padding-left: 15dvh;
+  padding-bottom: 10dvh;
 }
 
 .tool{
@@ -291,38 +291,211 @@ button {
 }
 
 #projects{
-  padding-bottom: 25vh;
-  margin-left: 10vh;
+  padding-bottom: 25dvh;
+  margin-left: 10dvh;
 }
 
 .project-title{
-  padding-top: 5vh;
-  font-size: 2.7vh;
+  padding-top: 5dvh;
+  font-size: 2.7dvh;
   text-align: left;
+  padding-left: 15dvh;
   padding-right: 11%;
-  padding-left: 15vh;
-  padding-bottom: 0.25vh;
+  padding-bottom: 0.25dvh;
 
 }
 
 .project-description{
-  font-size: 2.7vh;
-  text-indent: 2.5vh;
+  font-size: 2.7dvh;
+  text-indent: 2.5dvh;
   text-align: left;
-  padding-right: 11%;
-  padding-left: 15vh;
-  padding-bottom: 0.25vh;
+   padding-left: 15dvh;
+ padding-right: 11%;
+  padding-bottom: 0.25dvh;
   
 }
 .project-image{
-  margin-top: 2.5vh;
-  margin-bottom: 2.5vh;
-  margin-left: 55vh;
-  border-radius: 2.5vh;
-  display: block;
-  height: 45vh;
+  margin-top: 2.5dvh;
+  margin-bottom: 2.5dvh;
+  margin-left: 55dvh;
+  border-radius: 2.5dvh;
+  display: flex;
+  position: relative;
+  height: 45dvh;
   width: 1;
 
   box-shadow: var(--bg-sec) 0.5vh;
   position: relative;
+}
+
+
+.off-screen-menu {
+  background-color: var(--bg-sec);
+  height: 100dvh;
+  width: 1;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: .3s ease;
+}
+
+.off-screen-menu.active {
+  right: 0;
+
+}
+
+.nav-ham {
+  padding: 1rem;
+  display: flex;
+  background-color: var(--bg-sec);
+  right: 5dvh;
+  top: 5dvh;
+}
+
+.ham-menu{
+  height: 5dvh;
+  width: 5dvh;
+  margin-left: auto;
+
+  position: relative;
+  z-index: 15;
+  cursor: pointer;
+}
+
+.ham-menu span{
+  height: 5px;
+  width: 100%;
+  background-color: var(--misc);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3 ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+  display: none;
+}
+
+.ham-menu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .sidebar{
+    display: none;
+  }
+
+
+
+  .content{
+    margin-left: 0;
+  }
+
+  .project-image{
+    display: none;
+  }
+
+  .section-title{
+    margin-left: -15px;
+    font-size: 2.8dvh;
+    text-align: center;
+  }
+  
+  .section-subtitle{
+    margin-left: 15dvh;
+    font-size: 2.8dvh;
+  }
+
+  .project-description{
+    text-indent: 0dvh;
+  }
+  
+  .social{
+    display:flex;
+    justify-content: center;
+    float: none;
+    position: relative;
+    right: 0;
+    bottom: 5vh;
+  }
+
+  .signature{
+    opacity: 0.5;
+  }
+
+  .paragraph{
+    padding-left: 5dvh;
+    text-align: center;
+  }
+
+  #home{
+    margin-top: 0;
+    text-wrap: pretty;
+    padding-top: 30dvh;
+  }
+  
+
+  
+  #about{
+    margin-top: 45dvh;
+    padding-top: 20dvh;
+    padding-bottom: 50dvh;
+  }
+  
+  .paragraph-list{
+    padding-top: 5dvh;
+    font-size: 2.7dvh;
+    text-align: left;
+    padding-left: 5dvh;
+    text-align: center;
+    padding-bottom: 10dvh;
+  }
+
+  #projects{
+    padding-bottom: 25dvh;
+    margin-left: 0;
+  }
+
+  .project-title{
+    padding-top: 5dvh;
+    font-size: 2.7dvh;
+    text-align: left;
+    padding-left: 0dvh; 
+    padding-right: 0;
+    padding-bottom: 0.25dvh;
+    margin-left: 5dvh;
+  
+  }
+  
+  .project-description{
+    font-size: 2.7dvh;
+    text-indent: 1.25dvh;
+    text-align: left;
+    padding-left: 0dvh; 
+    padding-right: none;
+    padding-bottom: 0.25dvh;
+    margin-left: 5dvh;
+  }
 }
