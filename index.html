@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/skins/1.css">
     <link rel="stylesheet" href="style/skins/2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 </head>
 <body>
@@ -19,21 +20,19 @@
     <span class="bg-outline"></span>
 
 <section class="container">
-    <div class="off-screen-menu">
-        <ul>
-            <li class="ubuntu-bold hover" ><a href="#home">Home</a></li>
-            <li class="ubuntu-bold hover"><a href="#about">About</a></li>
-            <li class="ubuntu-bold hover"><a href="#projects">Projects</a></li>
-        </ul>
-      </div>
-  
-      <nav class="nav-ham">
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+    <nav class="ham-menu">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-      </nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <nav class="sidebar">
         <div class="bg"></div>
             <ul>

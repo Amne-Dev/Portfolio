@@ -305,8 +305,58 @@ button {
 
 }
 
-.off-screen-menu{
-  display: none;
+
+nav.ham-menu {
+display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  nav.ham-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-sec);
+    padding: 3vh;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .menu-icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+  }
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 9dvh;
+      left: 0;
+      background-color: var(--bg-sec);
+
+  }
+  .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+  }
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .project-description{
@@ -338,80 +388,6 @@ button {
   .sidebar{
     display: none;
   }
-
-  .off-screen-menu {
-    background-color: var(--bg-sec);
-    height: 100dvh;
-    width: 1;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-  }
-  
-  .off-screen-menu.active {
-    right: 0;
-  
-  }
-  
-  .nav-ham {
-    padding: 1rem;
-    display: flex;
-    background-color: var(--bg-sec);
-    right: 5dvh;
-    top: 5dvh;
-  }
-  
-  .ham-menu{
-    height: 5dvh;
-    width: 5dvh;
-    margin-left: auto;
-  
-    position: relative;
-    z-index: 15;
-    cursor: pointer;
-  }
-  
-  .ham-menu span{
-    height: 5px;
-    width: 100%;
-    background-color: var(--misc);
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3 ease;
-  }
-  .ham-menu span:nth-child(1) {
-    top: 25%;
-  }
-  
-  .ham-menu span:nth-child(3) {
-    top: 75%;
-  }
-  
-  .ham-menu.active span:nth-child(1){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  
-  .ham-menu.active span:nth-child(2){
-    display: none;
-  }
-  
-  .ham-menu.active span:nth-child(3){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  
 
   .content{
     margin-left: 0;
