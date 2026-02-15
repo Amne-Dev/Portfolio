@@ -1,0 +1,39 @@
+{
+  "certificates": [
+    {
+      "title": "Introduction to CSS3",
+      "provider": "Johns Hopkins University",
+      "date": "February 2026",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/OWUI2RVRVV15",
+      "skills": [
+        "Cascading Style Sheets (CSS)",
+        "JavaScript"
+      ],
+      "description": "Credential ID: OWUI2RVRVV15"
+    },
+    {
+      "title": "HTML, CSS, and Javascript for Web Developers",
+      "provider": "Johns Hopkins University",
+      "date": "February 2026",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/58I5MXVEP2IJ",
+      "skills": [
+        "HTML",
+        "HTML5",
+        "CSS",
+        "JavaScript"
+      ],
+      "description": "Credential ID: 58I5MXVEP2IJ"
+    },
+    {
+      "title": "Introduction to C# Programming and Unity",
+      "provider": "University of Colorado System",
+      "date": "February 2026",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/M29QCKBBD72J",
+      "skills": [
+        "C#",
+        "Unity"
+      ],
+      "description": "Credential ID: M29QCKBBD72J"
+    }
+  ]
+}
